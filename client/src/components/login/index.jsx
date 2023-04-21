@@ -26,7 +26,7 @@ const Login = ({ setUser, setSecret }) => {
   return (
     <div className="login-page">
       <div className="login-container">
-        <h2 className="title">CHATGPT APP</h2>
+        <h2 className="title">SPEAK AI</h2>
         <p
           className="register-change"
           onClick={() => setIsRegister(!isRegister)}
@@ -53,11 +53,11 @@ const Login = ({ setUser, setSecret }) => {
 
         <div className="login-actions">
           {isRegister ? (
-            <button type="button" onClick={handleRegister}>
+            <button className="login-btn" type="button" onClick={handleRegister}>
               Register
             </button>
           ) : (
-            <button type="button" onClick={handleLogin}>
+            <button className="signup-btn" type="button" onClick={handleLogin}>
               Login
             </button>
           )}
